@@ -60,7 +60,7 @@
       </div><br>
 
       <div class="col-12  text-center mb-2">
-        <button type="submit" class="btn btn-outline-danger ">submit</button>
+        <button type="submit" class="btn btn-outline-danger onclick="validation()" ">submit</button>
       </div>
 
     </form>
@@ -159,7 +159,8 @@ if((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){
     return false;
  }
 
- 
+ document.getElementById("demo").style.color = "green";
+  alert("SIGN UP SUCESSFULLY"); 
 
 }
 
